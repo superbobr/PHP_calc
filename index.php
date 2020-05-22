@@ -1,18 +1,18 @@
-<html lang="ru">
+<html>
 <head>
-    <title>Форма входа</title>
+    <title>Калькулятор</title>
 </head>
 <body>
-<form action="/login.php" method="get">
-    <label>
-        Логин <input type="text" name="login">
-    </label>
-    <br>
-    <label>
-        Пароль <input type="password" name="password">
-    </label>
-    <br>
-    <input type="submit" value="Войти">
+<form action="/result.php">
+    <input type="text" name="x1">
+    <select name="operation">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="text" name="x2">
+    <input type="submit" value="Посчитать">
 </form>
 </body>
 </html>
